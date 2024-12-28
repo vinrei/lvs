@@ -1,10 +1,13 @@
 import tkinter as tk
 from tkinter import messagebox
 
+from storage import save_to_file
+
 def on_submit():
     event_type = event_type_entry.get()
     image_filename = image_filename_entry.get()
 
+    save_to_file(event_type, image_filename)
     # Display the inputs (or you can process them as needed)
     messagebox.showinfo("Submitted", f"Event Type: {event_type}\nImage Filename: {image_filename}")
 

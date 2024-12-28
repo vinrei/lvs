@@ -1,1 +1,1 @@
-tkinter
+pydantic==2.10.4
