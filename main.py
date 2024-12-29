@@ -1,8 +1,14 @@
+import logging
 import tkinter as tk
 from tkinter import messagebox
 
 from camera import take_picture
 from storage import save_to_file
+
+# Configure the logging settings
+logger = logging.getLogger(__name__)
+logging.basicConfig(filename='logging.log', level=logging.DEBUG,
+                    format='%(asctime)s - %(levelname)s - %(name)s - %(message)s')
 
 def on_submit():
     event_type = event_type_entry.get()
@@ -11,6 +17,7 @@ def on_submit():
     save_to_file(event_type, image_filename)
     # Display the inputs (or you can process them as needed)
     messagebox.showinfo("Submitted", f"Event Type: {event_type}\nImage Filename: {image_filename}")
+    logger.info(f"Event was added") # do not include PII in the logs
 
 def on_picture():
     result = take_picture()

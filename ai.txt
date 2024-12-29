@@ -2,8 +2,12 @@ chatGPT: simple python UI with two field inputs: "event type" and "image filenam
 
 chatGPT: python json set types for objects in array
 
-GPT: help: """Expected Event but got dict with value {"""
+chatGPT: help: """Expected Event but got dict with value {"""
 
-python take picture from webcam
+chatGPT: python take picture from webcam
 
-can opencv write image into a folder
+chatGTP: can opencv write image into a folder
+
+Codium: help me add logging to file for this file
+
+chatGPT: why does my separate file have the same module name __main__ as my main.py

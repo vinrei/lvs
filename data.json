@@ -34,6 +34,31 @@
             "timestamp": "2024-12-29 20:35:29.191995",
             "event_type": "fewf",
             "image_name": "captured_images/2024-12-29 20:35:26.369098.jpg"
+        },
+        {
+            "timestamp": "2024-12-29 20:58:49.480354",
+            "event_type": "fef",
+            "image_name": "captured_images/2024-12-29 20:58:46.533485.jpg"
+        },
+        {
+            "timestamp": "2024-12-29 21:07:05.647135",
+            "event_type": "fef",
+            "image_name": "captured_images/2024-12-29 21:07:04.356222.jpg"
+        },
+        {
+            "timestamp": "2024-12-29 21:09:41.088407",
+            "event_type": "cdc",
+            "image_name": "captured_images/2024-12-29 21:09:40.176258.jpg"
+        },
+        {
+            "timestamp": "2024-12-29 21:17:43.235881",
+            "event_type": "ferf",
+            "image_name": "captured_images/2024-12-29 21:17:42.263225.jpg"
+        },
+        {
+            "timestamp": "2024-12-29 21:33:16.454232",
+            "event_type": "grege",
+            "image_name": "captured_images/2024-12-29 21:33:12.517365.jpg"
         }
     ]
 }

@@ -1,6 +1,9 @@
 from datetime import datetime
 import os
 import cv2
+import logging
+
+logger = logging.getLogger(__name__)
 
 OUTPUT_FOLDER = "captured_images"
 
@@ -14,17 +17,21 @@ def take_picture():
     destination_file_path = None
 
     if not camera.isOpened():
-        print("Error: Could not open webcam.")
-        exit()
+        msg = "Error: Could not open webcam."
+        print(msg)
+        logger.error(msg)
+        return
 
     # Show the webcam feed
     print("Press 's' to save the picture, or 'q' to quit without saving.")
     while True:
         # Capture a frame
-        ret, frame = camera.read()
+        successful, frame = camera.read()
         
-        if not ret:
-            print("Failed to grab frame.")
+        if not successful:
+            msg = "Failed to grab frame."
+            print(msg)
+            logger.error(msg)
             break
 
         # Display the frame
@@ -35,10 +42,10 @@ def take_picture():
         if key == ord('s'):  # Press 's' to save the picture
             destination_file_path = os.path.join(OUTPUT_FOLDER, str(datetime.now()) + ".jpg")
             cv2.imwrite(destination_file_path, frame)
-            print("Picture saved as: " + destination_file_path)
+            logger.info("Picture saved as: " + destination_file_path)
             break
         elif key == ord('q'):  # Press 'q' to quit without saving
-            print("Exiting without saving.")
+            logger.info("Exiting without saving.")
             break
 
     # Release the camera and close the window
