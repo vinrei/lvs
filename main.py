@@ -10,16 +10,16 @@ logger = logging.getLogger(__name__)
 logging.basicConfig(filename='logging.log', level=logging.DEBUG,
                     format='%(asctime)s - %(levelname)s - %(name)s - %(message)s')
 
+# User has submitted a new event
 def on_submit():
     event_type = event_type_entry.get()
     image_filename = image_filename_entry.get()
 
     save_to_file(event_type, image_filename)
-    # Display the inputs (or you can process them as needed)
     messagebox.showinfo("Submitted", f"Event Type: {event_type}\nImage Filename: {image_filename}")
     logger.info(f"Event was added") # do not include PII in the logs
 
-def on_picture():
+def on_picture_requested():
     result = take_picture()
     if result:
         image_filename_entry.insert(0, result)
@@ -43,7 +43,7 @@ image_filename_entry = tk.Entry(root, width=50)
 image_filename_entry.grid(row=2, column=1, padx=10, pady=10)
 
 # Take picture button
-picture_button = tk.Button(root, text="Take Picture", command=on_picture)
+picture_button = tk.Button(root, text="Take Picture", command=on_picture_requested)
 picture_button.grid(row=1, column=0, columnspan=2, pady=10)
 
 # Submit Button

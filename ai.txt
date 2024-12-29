@@ -1,13 +1,51 @@
-chatGPT: simple python UI with two field inputs: "event type" and "image filename"
+chatGPT prompt: simple python UI with two field inputs: "event type" and "image filename"
+code snippet used:
+    import tkinter as tk
+    from tkinter import messagebox
 
-chatGPT: python json set types for objects in array
+    def on_submit():
+        event_type = event_type_entry.get()
+        image_filename = image_filename_entry.get()
 
-chatGPT: help: """Expected Event but got dict with value {"""
+        # Display the inputs (or you can process them as needed)
+        messagebox.showinfo("Submitted", f"Event Type: {event_type}\nImage Filename: {image_filename}")
 
-chatGPT: python take picture from webcam
+    # Create the main window
+    root = tk.Tk()
+    root.title("Simple UI")
 
-chatGTP: can opencv write image into a folder
+    # Event Type Label and Entry
+    event_type_label = tk.Label(root, text="Event Type:")
+    event_type_label.grid(row=0, column=0, padx=10, pady=10)
 
-Codium: help me add logging to file for this file
+    event_type_entry = tk.Entry(root, width=30)
+    event_type_entry.grid(row=0, column=1, padx=10, pady=10)
 
-chatGPT: why does my separate file have the same module name __main__ as my main.py
+    # Image Filename Label and Entry
+    image_filename_label = tk.Label(root, text="Image Filename:")
+    image_filename_label.grid(row=1, column=0, padx=10, pady=10)
+
+    image_filename_entry = tk.Entry(root, width=30)
+    image_filename_entry.grid(row=1, column=1, padx=10, pady=10)
+
+    # Submit Button
+    submit_button = tk.Button(root, text="Submit", command=on_submit)
+    submit_button.grid(row=2, column=0, columnspan=2, pady=10)
+
+    # Run the application
+    root.mainloop()
+
+
+chatGPT prompt: python json set types for objects in array
+
+chatGPT prompt: help: """Expected Event but got dict with value {"""
+
+chatGPT prompt: python take picture from webcam
+
+chatGTP prompt: can opencv write image into a folder
+
+Codeium prompt: help me add logging to file for this file
+
+chatGPT prompt: why does my separate file have the same module name __main__ as my main.py
+
+Codeium prompt: explain this line: """key = cv2.waitKey(1) & 0xFF""

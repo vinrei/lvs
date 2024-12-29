@@ -1,64 +1,24 @@
 {
     "events": [
         {
-            "timestamp": "2024-12-29 10:48:31.210584",
-            "event_type": "xx",
-            "image_name": "xx"
+            "timestamp": "2024-12-30 10:10:54.054917",
+            "event_type": "event1",
+            "image_name": "captured_images/2024-12-30 10:10:52.368865.jpg"
         },
         {
-            "timestamp": "2024-12-29 10:51:46.956954",
-            "event_type": "ss",
-            "image_name": "ss"
+            "timestamp": "2024-12-30 10:11:41.544794",
+            "event_type": "event2",
+            "image_name": "abc.jpg"
         },
         {
-            "timestamp": "2024-12-29 10:53:21.378501",
-            "event_type": "ww",
-            "image_name": "ww"
+            "timestamp": "2024-12-30 10:13:36.662927",
+            "event_type": "",
+            "image_name": "captured_images/2024-12-30 10:13:32.125467.jpg"
         },
         {
-            "timestamp": "2024-12-29 10:53:36.333192",
-            "event_type": "aa",
-            "image_name": "aa"
-        },
-        {
-            "timestamp": "2024-12-29 20:24:48.958006",
-            "event_type": "fef",
-            "image_name": "fef"
-        },
-        {
-            "timestamp": "2024-12-29 20:33:59.053014",
-            "event_type": "hhvhgvgh",
-            "image_name": "captured_images/2024-12-29 20:33:56.202529.jpg"
-        },
-        {
-            "timestamp": "2024-12-29 20:35:29.191995",
-            "event_type": "fewf",
-            "image_name": "captured_images/2024-12-29 20:35:26.369098.jpg"
-        },
-        {
-            "timestamp": "2024-12-29 20:58:49.480354",
-            "event_type": "fef",
-            "image_name": "captured_images/2024-12-29 20:58:46.533485.jpg"
-        },
-        {
-            "timestamp": "2024-12-29 21:07:05.647135",
-            "event_type": "fef",
-            "image_name": "captured_images/2024-12-29 21:07:04.356222.jpg"
-        },
-        {
-            "timestamp": "2024-12-29 21:09:41.088407",
-            "event_type": "cdc",
-            "image_name": "captured_images/2024-12-29 21:09:40.176258.jpg"
-        },
-        {
-            "timestamp": "2024-12-29 21:17:43.235881",
-            "event_type": "ferf",
-            "image_name": "captured_images/2024-12-29 21:17:42.263225.jpg"
-        },
-        {
-            "timestamp": "2024-12-29 21:33:16.454232",
-            "event_type": "grege",
-            "image_name": "captured_images/2024-12-29 21:33:12.517365.jpg"
+            "timestamp": "2024-12-30 10:24:32.190898",
+            "event_type": "",
+            "image_name": "captured_images/2024-12-30 10:24:29.938239.jpg"
         }
     ]
 }
