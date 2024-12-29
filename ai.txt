@@ -3,3 +3,7 @@ chatGPT: simple python UI with two field inputs: "event type" and "image filenam
 chatGPT: python json set types for objects in array
 
 GPT: help: """Expected Event but got dict with value {"""
+
+python take picture from webcam
+
+can opencv write image into a folder
