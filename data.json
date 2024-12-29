@@ -1,24 +1,14 @@
 {
     "events": [
         {
-            "timestamp": "2024-12-30 10:10:54.054917",
-            "event_type": "event1",
-            "image_name": "captured_images/2024-12-30 10:10:52.368865.jpg"
+            "timestamp": "2024-12-30 11:34:08.724000",
+            "event_type": "a",
+            "image_name": "captured_images/2024-12-30 11:42:05.033421.jpg"
         },
         {
-            "timestamp": "2024-12-30 10:11:41.544794",
-            "event_type": "event2",
-            "image_name": "abc.jpg"
-        },
-        {
-            "timestamp": "2024-12-30 10:13:36.662927",
-            "event_type": "",
-            "image_name": "captured_images/2024-12-30 10:13:32.125467.jpg"
-        },
-        {
-            "timestamp": "2024-12-30 10:24:32.190898",
-            "event_type": "",
-            "image_name": "captured_images/2024-12-30 10:24:29.938239.jpg"
+            "timestamp": "2024-12-30 11:47:07.840626",
+            "event_type": "b",
+            "image_name": "captured_images/2024-12-30 11:47:05.019428.jpg"
         }
     ]
 }

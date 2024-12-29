@@ -49,3 +49,5 @@ Codeium prompt: help me add logging to file for this file
 chatGPT prompt: why does my separate file have the same module name __main__ as my main.py
 
 Codeium prompt: explain this line: """key = cv2.waitKey(1) & 0xFF""
+
+chatGPT prompt: how to mock datetime.now() in my unittest

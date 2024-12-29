@@ -1,0 +1,14 @@
+{
+    "events": [
+        {
+            "timestamp": "2024-12-25 10:30:00",
+            "event_type": "event1",
+            "image_name": "abc.jpg"
+        },
+        {
+            "timestamp": "2024-12-25 10:30:00",
+            "event_type": "event2",
+            "image_name": "xyz.jpg"
+        }
+    ]
+}
