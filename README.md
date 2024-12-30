@@ -6,6 +6,8 @@ Getting started:
  - Run webcam streamer: `python3 webcam_stream.py`
  - In a separate terminal, run the app: `python3 main.py`
 
+Run unit tests with: `python3 -m unittest`
+
 Events will be saved in -> data.json
 
 Logs will be saved in -> logging.log
