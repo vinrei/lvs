@@ -12,8 +12,8 @@ if not os.path.exists(OUTPUT_FOLDER):
     os.makedirs(OUTPUT_FOLDER)
 
 def take_picture():
-    # Initialize the webcam (use 0 for the default webcam)
-    camera = cv2.VideoCapture(0)
+    # Initialize the webcam
+    camera = cv2.VideoCapture('http://localhost:5000/video_feed')
     destination_file_path = None
 
     if not camera.isOpened():

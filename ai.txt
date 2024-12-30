@@ -1,3 +1,8 @@
+While building this application, I used chatGPT and Codeium.
+chatGPT helped with general solution generation and problem solving. 
+codeium (in vscode) primarily helped with faster and better line autocomplete.
+
+List of prompts used:
 chatGPT prompt: simple python UI with two field inputs: "event type" and "image filename"
 code snippet used:
     import tkinter as tk
@@ -51,3 +56,5 @@ chatGPT prompt: why does my separate file have the same module name __main__ as 
 Codeium prompt: explain this line: """key = cv2.waitKey(1) & 0xFF""
 
 chatGPT prompt: how to mock datetime.now() in my unittest
+
+chatGPT prompt: python webcam http streamer
