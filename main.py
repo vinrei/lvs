@@ -48,7 +48,7 @@ image_filename_entry = tk.Entry(root, width=50)
 image_filename_entry.grid(row=2, column=1, padx=10, pady=10)
 
 # Take picture button
-picture_button = tk.Button(root, text="Take Picture", command=on_picture_requested)
+picture_button = tk.Button(root, text="Take Picture - press 's' in popup", command=on_picture_requested)
 picture_button.grid(row=1, column=0, columnspan=2, pady=10)
 
 # Submit Button
