@@ -10,6 +10,11 @@ logger = logging.getLogger(__name__)
 logging.basicConfig(filename='logging.log', level=logging.DEBUG,
                     format='%(asctime)s - %(levelname)s - %(name)s - %(message)s')
 
+def on_picture_requested():
+    result = take_picture()
+    if result:
+        image_filename_entry.insert(0, result)
+
 # User has submitted a new event
 def on_submit():
     event_type = event_type_entry.get()
@@ -18,11 +23,6 @@ def on_submit():
     event_storage.save_to_file(event_type, image_filename)
     messagebox.showinfo("Submitted", f"Event Type: {event_type}\nImage Filename: {image_filename}")
     logger.info(f"Event was added") # do not include PII in the logs
-
-def on_picture_requested():
-    result = take_picture()
-    if result:
-        image_filename_entry.insert(0, result)
 
 # Initialise application
 logger.info("Application started")
